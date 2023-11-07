@@ -222,10 +222,10 @@ const carDetails = {
 */
 
 //Code Here
-let color = carDetails.color;
-let make = carDetails.make;
-let model = carDetails.model;
-let year = carDetails.year;
+let {color} = carDetails;
+let {make} = carDetails;
+let {model} = carDetails;
+let {year} = carDetails;
 
 /// ////////////// PROBLEM 12 ///////////////////
 
@@ -237,9 +237,9 @@ let year = carDetails.year;
 
 function greeting(obj) {
   //Code Here
-  let title = obj.title;
-  let firstName = obj.firstName;
-  let lastName = obj.lastName;
+  let {title} = obj;
+  let {firstName} = obj;
+  let {lastName} = obj;
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -257,10 +257,10 @@ function greeting(obj) {
 
 //Code Here
 function totalPopulation(obj) {
-  let utah = obj.utah;
-  let california = obj.california;
-  let texas = obj.texas;
-  let arizona = obj.arizona;
+  let {utah} = obj;
+  let {california} = obj;
+  let {texas} = obj;
+  let {arizona} = obj;
 
   return utah + california + texas + arizona;
 }
